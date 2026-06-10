@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoCampo - Sustentabilidade no Agronegócio</title>
+    <style>
+        /* --- ESTILOS GERAIS (Tons de Verde e Reset) --- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        :root {
+            --verde-escuro: #1b4332;
+            --verde-principal: #2d6a4f;
+            --verde-claro: #52b788;
+            --verde-fundo: #f4f9f4;
+            --texto: #2d3748;
+            --branco: #ffffff;
+        }
+
+        body {
+            background-color: var(--verde-fundo);
+            color: var(--texto);
+            line-height: 1.6;
+        }
+
+        /* --- CABEÇALHO E NAVEGAÇÃO --- */
+        header {
+            background-color: var(--verde-escuro);
+            color: var(--branco);
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .logo h1 {
+            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+
+        nav a {
+            color: var(--branco);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--verde-claro);
+        }
+
+        /* --- SEÇÃO HERO (INTRODUÇÃO) --- */
+        .hero {
+            background: linear-gradient(rgba(27, 67, 50, 0.85), rgba(45, 106, 79, 0.85)), url('https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=1200&q=80') center/cover;
+            color: var(--branco);
+            padding: 6rem 2rem;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            max-width: 600px;
+            margin: 0 auto 2rem auto;
+            font-size: 1.1rem;
+        }
+
+        .btn {
+            background-color: var(--verde-claro);
+            color: var(--verde-escuro);
+            padding: 0.8rem 1.5rem;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+            transition: transform 0.2s, background 0.3s;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+            background-color: var(--branco);
+        }
+
+        /* --- SEÇÃO DE CONTEÚDO (PRÁTICAS) --- */
+        .container {
+            max-width: 1100px;
+            margin: 4rem auto;
+            padding: 0 2rem;
+        }
+
+        .secao-titulo {
+            text-align: center;
+            color: var(--verde-escuro);
+            margin-bottom: 3rem;
+            font-size: 2rem;
+        }
+
+        .grid-praticas {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: var(--branco);
+            padding: 2rem;
+            border-radius: 8px;
+            border-top: 5px solid var(--verde-principal);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: translateY 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            color: var(--verde-principal);
+            margin-bottom: 1rem;
+        }
